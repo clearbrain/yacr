@@ -310,6 +310,12 @@ x,,,
 		Input: `3376027	”S” Falls	"S" Falls		4.53333`,
 		Output: [][]string{{"3376027", `”S” Falls`, `"S" Falls`, "", "4.53333"}},
 	},
+	{
+		Name:   "BacktickEscapedQuote",
+		Input:  "\"a\\\"b\"",
+		Quoted: true,
+		Output: [][]string{{"a\"b"}},
+	},
 	//
 }
 
